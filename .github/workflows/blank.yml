@@ -27,7 +27,7 @@ jobs:
     - run: ./main
   build_image:
     runs-on: [self-hosted, repo-k8s-runner]
-    container: "podman:latest"
+    container: "quay.io/podman/stable:latest"
     steps:
       - uses: actions/checkout@v2
       - run: podman build .
