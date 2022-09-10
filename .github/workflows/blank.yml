@@ -30,6 +30,4 @@ jobs:
     container: "quay.io/podman/stable:latest"
     steps:
       - uses: actions/checkout@v2
-      - name: Verify access to /dev/fuse
-        run: ls /dev/fuse
       - run: podman build .
