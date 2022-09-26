@@ -41,7 +41,7 @@ jobs:
       - name: "Say Hello Mona it's Monday"
         run: |
           echo "$Greeting $First_Name. Today is $DAY_OF_WEEK!"
-          DAY_OF_WEEK=TUESDAY
+          echo "DAY_OF_WEEK=TUESDAY" >> $GITHUB_ENV
         env:
           First_Name: Mona
   greeting_output:
