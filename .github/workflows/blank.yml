@@ -20,7 +20,8 @@ env:
 jobs:
   job0:
     runs-on: ubuntu-latest
-    needs: job1
+    steps:
+    - run: echo "start"
   # This workflow contains a single job called "build"
   job1:
     runs-on: ubuntu-latest
