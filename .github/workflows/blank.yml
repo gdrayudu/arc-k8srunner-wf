@@ -31,7 +31,8 @@ jobs:
         run: |
           CHANGE_ID=CHG45394
           echo "::set-output name=test::$CHANGE_ID"
-          echo $GITHUB_REPOSITORY
+          echo $GITHUB_REPOSITORY | cut -d'/' -f1
+          echo $GITHUB_REPOSITORY | cut -d'/' -f2
       - name: step2
         id: step2
         run: echo "::set-output name=test::world"
