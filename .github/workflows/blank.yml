@@ -74,4 +74,4 @@ jobs:
       uses: actions/download-artifact@v3
     - name: list
       run: |
-        ls -l
+        ls -l *
