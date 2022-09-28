@@ -67,3 +67,11 @@ jobs:
           path: |
             dist
             !dist/**/*.md
+  Download_artifact:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Download all workflow run artifacts
+      uses: actions/download-artifact@v3
+    - name: list
+      run: |
+        ls -l
