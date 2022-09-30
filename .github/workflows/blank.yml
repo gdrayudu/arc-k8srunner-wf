@@ -7,9 +7,9 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ main ]
+    branches: [ wf-state ]
   pull_request:
-    branches: [ main ]
+    branches: [ wf-state ]
 env:
   DAY_OF_WEEK: Monday
   
