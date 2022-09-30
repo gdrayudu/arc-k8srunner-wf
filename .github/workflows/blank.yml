@@ -81,7 +81,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: Try to fail
       run: |
-        i = $?
+        i=$?
         if $i > 0 ; then
           echo "Game over!"
           exit 1
