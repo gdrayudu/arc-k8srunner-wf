@@ -80,9 +80,10 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Try to fail
-      continue-on-error: true
+      #continue-on-error: true
+      timeout-minutes: 60
       run: |
-        ltr
+        sleep 120
         i=$?
         if $i > 0 ; then
           echo "Game over!"
