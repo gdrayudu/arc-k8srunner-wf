@@ -80,6 +80,11 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Try to fail
-      run: exit 1
+      run: |
+        i = $?
+        if i > 0 ; then
+          echo "Game over!"
+          exit 1
+        fi
     - name: Print message if we don't fail
       run: echo Should not get here
