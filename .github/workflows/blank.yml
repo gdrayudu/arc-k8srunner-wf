@@ -78,6 +78,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - continue-on-error: true
     - uses: actions/checkout@v1
     - name: Try to fail
       run: |
