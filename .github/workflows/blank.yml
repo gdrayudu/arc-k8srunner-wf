@@ -22,6 +22,7 @@ jobs:
   job0:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - name: Load environment from YAML
         uses: doughepi/yaml-env-action@v1.0.0
         with:
