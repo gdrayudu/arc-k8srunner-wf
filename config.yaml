@@ -1,5 +1,6 @@
 a1: foo
 a2: bar
+service: sample-test
 env:
   prd:
     region: usw2
